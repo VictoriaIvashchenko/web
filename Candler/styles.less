@@ -390,7 +390,7 @@ html, body {
   margin-right: auto;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 15px;
 
 }
 
@@ -458,7 +458,7 @@ html, body {
 
 .main_part{
   order: 2;
-  max-height: 2639px;
+
   min-height: 538px;
 
 }
@@ -507,6 +507,10 @@ html, body {
   margin-top: 5px;
   font-size: 36px;
   color: @text_color_1;
+
+}
+.catalog a{
+  text-decoration: none;
 }
 #line{
   width: 195.74px;
@@ -532,7 +536,7 @@ html, body {
 .articls{
   display: flex;
   flex-direction: column;
-  
+
   text-align: center;
 
 }
@@ -568,15 +572,18 @@ html, body {
   justify-content: center;
 }
 .sect{
+
   margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
 
 }
 .art1{
-  width: 444.63px;
+  max-width: 444.63px;
+  min-width: 280px;
   height: 455px;
   background: rgba(255, 200, 87, 0.5);
   border-radius: 10px;
@@ -703,7 +710,84 @@ html, body {
   justify-content: center;
 }
 
+.rating-result {
+  position: absolute;
+  right: 20px;
+  margin-top:27px;
+}
+.rating-result span {
 
+  font-size: 20px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+  content: '★';
+}
+.rating-result > span.active {
+  color: @mycolor;
+  text-shadow: @text_color_2;
+}
+
+.com_1{
+  width: 280px;
+  height: 309.69px;
+  position: relative;
+  background: #ffffac;
+  border-radius: 15px;
+  margin-top: 15px;
+
+}
+.comm{
+  position: absolute;
+  width: 247px;
+  height: 178.74px;
+  left: 25px;
+  top:80px;
+  text-align: left;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #2E4052;
+
+  mix-blend-mode: darken;
+
+}
+.date{
+  position: absolute;
+  width: 72px;
+  height: 29.05px;
+  left: 188px;
+  top: 268px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #2E4052;
+
+}
+
+.name{
+  position: absolute;
+  width: 42px;
+  height: 38.23px;
+  left: 25px;
+  top: 25px;
+
+  font-family: Amatic SC;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+
+  color: #412234;
+}
 .soc_ad{
   position: relative;
   margin-top: 70px;
@@ -937,4 +1021,10 @@ html, body {
     margin-right: 5%;
     align-content: center;
   }
+}
+@media (max-width: 448px){
+  .blog{
+    display: none;
+  }
+  .comment{display: none}
 }
